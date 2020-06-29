@@ -1,0 +1,20 @@
+DESCRIÇAO
+
+Desenvolvimento de um sistema para automatizar o serviço de empréstimo de livros 
+de bibliotecas de instituições de ensino. O sistema terá ênfase no controle do 
+bibliotecário, bem como facilitar a consulta e reserva da parte do aluno, com 
+foco em escolas do sistema público, onde esse serviço é feito de forma manual, 
+ou nem existe um controle da biblioteca, muitas vezes causando prejuízo e 
+danos no acervo.
+
+O sistema será acessado por:
+Alunos:
+Utilizarão para pesquisar o acervo, bem como realizar reserva de títulos 
+disponíveis e acompanhar seu histórico de empréstimos:
+
+Bibliotecário:
+Irá autorizar os empréstimos para os alunos, controlar o acervo, cadastrar editar 
+e excluir títulos, ter relatórios e estatísticas de empréstimos.
+
+Administrador:
+Realizará todas as operações do Bibliotecário, e também o cadastro de Bibliotecário.
