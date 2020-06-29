@@ -1,23 +1,26 @@
+# UNIVERSIDADE FEDERAL DE LAVRAS
+![logoUfla.png](https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logoUfla.png)
+
 # KUBO
-## Projeto pr tico da disciplina de engenharia de software
+## Projeto pratico da disciplina de engenharia de software
 
 ## Grupo:
 
-**Luciano Hakime Dutra
-**Pedro Henrique de Freitas
-**Thomaz Flanklin de Souza Jorge
+** Luciano Hakime Dutra
+** Pedro Henrique de Freitas
+** Thomaz Flanklin de Souza Jorge
 
 ## Tecnologias Utilizadas
-###Frontend:
+### Frontend:
 JavaScript (Angular)
 
-###Backend:
+### Backend:
 C# (.Net)
 
-###Servidor:
+### Servidor:
 Apache
 
-###Banco de Dados:
-MySql
+### Banco de Dados:
+SQL Server
 
 
