@@ -10,14 +10,6 @@
 ** Pedro Henrique de Freitas
 ** Thomaz Flanklin de Souza Jorge
 
-## Descrição:
-
-Desenvolvimento de um sistema para automatizar o serviço de empréstimo de livros
-de bibliotecas de instituições de ensino. O sistema terá ênfase no controle do bibliotecário,
-bem como facilitar a consulta e reserva da parte do aluno, com foco em escolas do sistema
-público, onde esse serviço é feito de forma manual, ou nem existe um controle da biblioteca,
-muitas vezes causando prejuízo e danos no acervo.
-
 ## Tecnologias Utilizadas
 ### Frontend:
 JavaScript (Angular)
