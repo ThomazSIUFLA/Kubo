@@ -1,5 +1,8 @@
 # UNIVERSIDADE FEDERAL DE LAVRAS
-![logoUfla.png](https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logoUfla.png)
+
+<img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logoUfla.png" whidth="150px">
+<img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/Group%2035.png" whidth="150px">
+<img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logo.png" whidth="150px">
 
 # KUBO
 ## Projeto pratico da disciplina de engenharia de software
