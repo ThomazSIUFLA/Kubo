@@ -1,10 +1,9 @@
-# UNIVERSIDADE FEDERAL DE LAVRAS
-
-<img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logoUfla.png" whidth="150px">
-<img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/Group%2035.png" whidth="150px">
-<img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logo.png" whidth="150px">
-
+# UNIVERSIDADE FEDERAL DE LAVRAS        <img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logoUfla.png" width="150pt" >
+          
+<img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/Group%2035.png" width="150pt">   <img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logo.png" width="150pt">                                                                     
+                                                                                     
 # KUBO
+# Biblio.tech
 ## Projeto pratico da disciplina de engenharia de software
 
 ## Grupo:
