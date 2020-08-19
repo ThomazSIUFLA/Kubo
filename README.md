@@ -36,7 +36,7 @@
 * Todos os commits dever ser claros;
 * Todos os commits devem estar no infinitivo.
 ```
-###Branchs:
+### Branchs:
 ```
 * A branch master só poderá ser modificada apó testes forem feitos.
 * Todo o desenvolvimento deverá ser mergeado na branch desenvolvimento.
