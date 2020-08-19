@@ -1,36 +1,35 @@
-# UNIVERSIDADE FEDERAL DE LAVRAS        <img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logoUfla.png" width="150pt" >
-          
-<img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/Group%2035.png" width="150pt">   <img src="https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logo.png" width="150pt">                                                                     
-                                                                                     
+# UNIVERSIDADE FEDERAL DE LAVRAS
+![logoUfla.png](https://github.com/ThomazSIUFLA/Kubo/blob/master/img/logoUfla.png)
+
 # KUBO
-# Biblio.tech
 ## Projeto pratico da disciplina de engenharia de software
 
 ## Grupo:
 
 ** Luciano Hakime Dutra
+
 ** Pedro Henrique de Freitas
+
 ** Thomaz Flanklin de Souza Jorge
 
-## Descrição:
 
-Desenvolvimento de um sistema para automatizar o serviço de empréstimo de livros
-de bibliotecas de instituições de ensino. O sistema terá ênfase no controle do bibliotecário,
-bem como facilitar a consulta e reserva da parte do aluno, com foco em escolas do sistema
-público, onde esse serviço é feito de forma manual, ou nem existe um controle da biblioteca,
-muitas vezes causando prejuízo e danos no acervo.
+##TECNOLOGIAS UTILIZADAS
 
-## Tecnologias Utilizadas
-### Frontend:
-TypeScript (Angular)
+###Linguagens de Folha de Estilo
+**CSS - Versão: 3.0
 
-### Backend:
-C# (.Net)
+###Linguagens de Marcação
+**HTML - Versão: 5.0
 
-### Servidor:
-Apache
+###Linguagens de Script
+**PHP - Versão: 7.4.7
 
-### Banco de Dados:
-SQL Server
+###Linguagens de Programação
+**JavaScript - Versão: ECMAScript 2018
 
+###Banco de Dados
+**phpMyAdmin - Versão: 5.0.2
+
+###Servidor
+**Apache - Versão: 2.4.43
 
