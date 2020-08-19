@@ -24,9 +24,6 @@
 ### Linguagens de Script
 **PHP - Versão: 7.4.7**
 
-### Linguagens de Programação
-**JavaScript**
-
 ### Banco de Dados
 **phpMyAdmin - Versão: 5.0.2**
 
@@ -35,10 +32,9 @@
 
 ## REGRAS E PADRÕES DE USO DO GIT
 ### Commits:
-´´´
+```
 * Todos os commits dever ser claros;
 * Todos os commits devem estar no infinitivo.
-* 
 ```
 ###Branchs:
 ```
