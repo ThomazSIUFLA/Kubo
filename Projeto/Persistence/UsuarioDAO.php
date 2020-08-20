@@ -60,16 +60,18 @@ class usuarioDao {
 
     }
 
-    function autenticarUsuario($conn, $email){
-        $sql = "SELECT *
+    function autenticarUsuario($conn, $email, $senha){
+        $sql = "SELECT idUsuario, nome, senha, tipo
         FROM usuario
-        WHERE email = '$email'";
+        WHERE email = '$email' AND senha= '$senha'";
+        echo $sql;
+
         $id = $conn->query($sql);
-        $res = $id->fetch_assoc();        
-        return $res;        
+        if($id){
+            $res = $id->fetch_assoc();     
+            return $res;
+        }           
     }
 }
-
-
 
 ?>

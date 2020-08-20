@@ -1,5 +1,5 @@
 <?php
-include './header.html';
+include './header.php';
 include_once '../Controller/emprestimosController.php';
 ?>
 <!doctype html>
@@ -28,12 +28,13 @@ include_once '../Controller/emprestimosController.php';
     </div>
 
     <form class="form-inline my-2 my-lg-0 ml-auto" method="POST" action="">
-      <div class="form-group col-md-4 mr-auto">
+      <div class="form-group col-md-3 mr-auto">
         <select id="inputState" class="form-control" name="param">
           <option value="nome">Pesquise por...</option>
           <option value="idEmprestimo">código Empréstimo</option>
           <option value="nome">Nome do Aluno</option>
           <option value="turma">Turma</option>
+          <option value="situacao">Situação</option>
           <option value="codLivro">Código Livro</option>
           <option value="titulo">Titulo do Livro</option>
           <option value="dataEmprestimo">Data Empréstimo</option>
@@ -41,6 +42,42 @@ include_once '../Controller/emprestimosController.php';
           <option value="dataDevolucao">Data Devolução</option>
         </select>
       </div>
+      <div id="situacao" class="container col-md-6 ml-auto">
+      <div class="form-group ">
+                <select id="status" class="form-control" name="status">
+                    <option value="finalizado">FINALIZADO</option>
+                    <option value="comAtraso">FINALIZADO COM ATRASO</option>
+                    <option value="pendente">PENDENTE</option>
+                    <option value="atrasado">ATRASADO</option>
+                </select>
+            </div>
+      </div>
+      <div id="escolheTurma" class="container col-md-6 ml-auto">
+      <div class="form-group ">
+                <select id="turm" class="form-control" name="serie">
+                    <option value="5">5ª Fundam</option>
+                    <option value="6">6ª Fundam</option>
+                    <option value="7">7ª Fundam</option>
+                    <option value="8">8ª Fundam</option>
+                    <option value="9">9ª Fundam</option>
+                    <option value="1">1º Médio</option>
+                    <option value="2">2º Médio</option>
+                    <option value="3">3º Médio</option>
+                </select>
+            </div>
+      <div class="form-group ">
+                <select id="turma" class="form-control" name="turma">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                </select>
+            </div>
+      </div>      
       <input class="form-control mr-sm-2" type="text" id="pesquisa" name="valor" placeholder="Search" aria-label="Search">
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
@@ -56,7 +93,7 @@ include_once '../Controller/emprestimosController.php';
   if (!$valor) {
     $reg = $res->listar();
   } else {
-    //$reg = $res->pesquisaLivro($valor);
+    $reg = $res->pesquisaEmprestimo($valor);
   }
   if ($reg->num_rows > 0) {
   ?>
@@ -134,6 +171,28 @@ include_once '../Controller/emprestimosController.php';
     </table>
 
     <!-- Optional JavaScript -->
+    <script>
+      $(document).ready(function() {
+            $('#escolheTurma').hide();
+            $('#situacao').hide()
+            $('#inputState').on('change', function() {
+                var selectValor = $(this).val();
+                if (selectValor == 'turma') {
+                    $('#escolheTurma').show();
+                    $('#pesquisa').hide();
+                    $('#situacao').hide();
+                } else if (selectValor == 'situacao'){
+                    $('#escolheTurma').hide();
+                    $('#pesquisa').hide();
+                    $('#situacao').show();
+                } else {
+                    $('#escolheTurma').hide();
+                    $('#pesquisa').show();
+                    $('#situacao').hide();
+                }
+            });
+        });
+    </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../node_modules/jquery/dist/jquery.js"></script>

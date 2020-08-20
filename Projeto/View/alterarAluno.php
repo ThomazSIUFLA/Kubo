@@ -1,5 +1,5 @@
 <?php
-require './header.html';
+require './header.php';
 include_once '../Controller/alunosController.php';
 
 

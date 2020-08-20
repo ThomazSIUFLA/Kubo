@@ -1,5 +1,5 @@
 <?php
-include './header.html';
+include './header.php';
 include_once '../Controller/emprestimosController.php';
 
 $cod = $_GET['cod'];
@@ -86,7 +86,7 @@ $cod = $_GET['cod'];
 </html>
 
 <?php
-/*if ($_POST) {        
+if ($_POST) {        
     
     $control->renovaEmprestimo($cod, $_POST);
 ?>
@@ -95,4 +95,4 @@ $cod = $_GET['cod'];
         window.location.href = "./emprestimos.php";
     </script><?php
             }
-                */?>
+                ?>

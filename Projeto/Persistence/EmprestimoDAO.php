@@ -61,7 +61,38 @@ class EmprestimoDao {
     }
 
     function pesquisaEmprestimo($conn,$param,$valor){
-        $sql = "SELECT * FROM Emprestimo NATURAL JOIN usuario WHERE $param LIKE '%$valor%' ORDER BY nome";
+        if ($valor == 'finalizado'){
+            $sql = "SELECT * 
+            FROM Emprestimo NATURAL JOIN usuario NATURAL JOIN aluno 
+            WHERE dataDevolucao <= dataVencimento
+            ORDER BY nome";
+        } elseif ($valor == 'comAtraso'){
+            $sql = "SELECT * 
+            FROM Emprestimo NATURAL JOIN usuario NATURAL JOIN aluno 
+            WHERE dataDevolucao > dataVencimento
+            ORDER BY nome";            
+        } elseif ($valor == 'pendente'){
+            $hoje = date("Y-m-d");
+            $sql = "SELECT * 
+            FROM Emprestimo NATURAL JOIN usuario NATURAL JOIN aluno 
+            WHERE dataDevolucao IS NULL
+            AND dataVencimento >= '$hoje'
+            ORDER BY nome";
+        } elseif ($valor == 'atrasado'){
+            $hoje = date("Y-m-d");
+            $sql = "SELECT * 
+            FROM Emprestimo NATURAL JOIN usuario NATURAL JOIN aluno 
+            WHERE dataDevolucao IS NULL
+            AND dataVencimento < '$hoje'
+            ORDER BY nome";
+        }  else {
+            $sql = "SELECT * 
+            FROM Emprestimo NATURAL JOIN usuario NATURAL JOIN aluno 
+            WHERE $param 
+            LIKE '%$valor%' 
+            ORDER BY nome";
+        }
+
         $res = $conn->query($sql);
 
         return $res;

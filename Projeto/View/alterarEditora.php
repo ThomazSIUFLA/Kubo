@@ -1,6 +1,5 @@
 <?php
-require './header.html';
-require './footer.html';
+require './header.php';
 include_once '../Controller/editoraController.php';
 
 

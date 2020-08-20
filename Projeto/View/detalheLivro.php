@@ -1,5 +1,5 @@
 <?php
-include './header.html';
+include './header.php';
 include_once '../Controller/livrosController.php';
 
 $param = $_GET;

@@ -1,7 +1,7 @@
 
 <?php
 include_once '../Controller/alunosController.php';
-include './header.html';
+include './header.php';
 ?>
 <head>
     <!-- Required meta tags -->

@@ -1,5 +1,5 @@
 <?php
-include './header.html';
+include './header.php';
 include_once '../Controller/editoraController.php';
 include_once '../Controller/C_pesquisaEditora.php';
 ?>

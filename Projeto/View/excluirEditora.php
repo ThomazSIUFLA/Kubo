@@ -1,6 +1,5 @@
 <?php
-include './header.html';
-include './footer.html';
+include './header.php';
 include_once '../Controller/EditoraController.php';
 
 $param = $_GET;
