@@ -2,17 +2,15 @@
 
 class Livro{
     private $isbn;
-    private $codLivro;
     private $titulo;
     private $codEditora;
     private $anoPublic;
     private $edicao;
     
-    function __construct($isbn, $codLivro, $titulo, $codEditora, $anoPublic, $edicao) {
+    function __construct($isbn, $titulo, $codEditora, $anoPublic, $edicao) {
         $this->isbn = $isbn;
-        //$this->codLivro = $codLivro;
         $this->titulo = $titulo;
-        //$this->codEditora = $codEditora;
+        $this->codEditora = $codEditora;
         $this->anoPublic = $anoPublic;
         $this->edicao = $edicao;
     }

@@ -2,13 +2,16 @@
     include_once '../Persistence/connection.php';
     include_once '../Model/Livro.php';
     include_once '../Persistence/LivroDAO.php';
-    
+
+    $r = $_POST;
     $isbn = $_POST ['isbn'];
     $titulo = $_POST ['titulo'];
     $anoPublic = $_POST ['anoPublic'];
     $edicao = $_POST ['edicao'];
+    $editora = (int)$_POST ['edit'];
 
-    $liv = new Livro($isbn, null, $titulo, null, $anoPublic, $edicao);
+
+    $liv = new Livro($isbn, $titulo, $editora, $anoPublic, $edicao);
 
 
     $connection = new Connection();
@@ -16,6 +19,8 @@
 
     $dao = new LivroDao();
     $dao->salvarLivro($liv, $conn);   
+
+    header('Location: ../view/livros.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

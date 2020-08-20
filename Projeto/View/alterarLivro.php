@@ -1,6 +1,5 @@
 <?php
 require './header.html';
-require './footer.html';
 include_once '../Controller/livrosController.php';
 
 
@@ -47,6 +46,7 @@ $reg = $livro->fetch_assoc();
     <button type="submit" class="btn btn-primary btn-lg" style="float: right; width: 300px; height: 40px;">Salvar</button>
 </form>
 </div>
+
 
     
 </body>

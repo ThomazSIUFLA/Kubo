@@ -11,6 +11,10 @@
 
     $dao = new LivroDao();
     $dao->alterarLivro($conn, $livro);   
+    
+    header('Location: ../view/livros.php'); // Error
+
+    
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

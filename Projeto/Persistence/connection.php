@@ -3,7 +3,7 @@ class Connection{
     private $servername = "localhost";
     private $username = "root";
     private $password = "";
-    private $bd = "biblio.tech";
+    private $bd = "bibliotech";
     private $conn = null;
 
     function __construct() {}
