@@ -1,19 +1,18 @@
 <!doctype html>
 <html lang="pt-br">
-
+<!--3380074-->
 <head>
 
   <!-- Bootstrap core CSS -->
-  <link href="./node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet">
+  <link href="./bibl/node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="./node_modules/bootstrap/compiler/signin.css" rel="stylesheet">
 </head>
 
 <body class="text-center body">
 
-  <div class="form-signin">
-    <form action="./controller/C_acesso.php" method="POST">
+  <div class="container">
+    <form action="./bibl/controller/C_acesso.php" method="POST">
       <img class="mb-4" src="./img/logo.png" alt="" width="200">
       <h1 class="h3 mb-3 font-weight-400 text-white">LOGIN</h1>
       <label for="inputEmail" class="sr-only">Nome de usuário</label>
