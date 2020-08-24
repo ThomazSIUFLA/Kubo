@@ -1,6 +1,5 @@
 <?php
-include './header.html';
-include './footer.html';
+include './header.php';
 include_once '../Controller/livrosController.php';
 
 $param = $_GET;
@@ -21,22 +20,22 @@ $control = new LivrosController();
 $liv = $control->detalharLivro($valor);
 $reg = $liv->fetch_assoc();
 ?>
-<div class="card container center" style="width: 18rem;">
-  <img src="../img/wiki.jpg" class="card-img-top" alt="...">
+<div class="card container center col-md-4" style="background: #007bff linear-gradient(180deg, #268fff, #007bff) repeat-x">
+  <img src="../img/banner1.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title"><?php echo $reg['titulo'] ?></h5>
     <p class="card-text">código ISBN <?php echo $reg['isbn'] ?></p>
     <p class="card-text">código Biblioteca <?php echo $reg['codLivro'] ?></p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Editora <?php echo $reg['codEditora'] ?></li>
+    <li class="list-group-item">Editora <?php echo $reg['nomeEditora'] ?></li>
     <li class="list-group-item">Edição <?php echo $reg['edicao'] ?></li>
     <li class="list-group-item">Publicado em <?php echo $reg['anoPublic'] ?></li>
   </ul>
   <div class="card-body">
-    <a href="./excluirLivro.php?cod=<?php echo $reg['codLivro']?>" class="card-link">Excluir</a>
-    <a class="card-link" href="./alterarLivro.php?cod=<?php echo $reg['codLivro'] ?>">Alterar</a>
-    <input type='button' value='Voltar' onclick='history.go(-1)' />
+    <a href="./excluirLivro.php?cod=<?php echo $reg['codLivro']?>" class="card-link btn btn-outline-danger">Excluir</a>
+    <a class="card-link btn btn-outline-success" href="./alterarLivro.php?cod=<?php echo $reg['codLivro'] ?>">Alterar</a>
+    <input type='button'class="btn btn-success" value='Voltar' onclick='history.back()' />
   </div>
 </div>    
 </body>
