@@ -6,9 +6,6 @@
 
 ## Grupo:
 
-* **Luciano Hakime Dutra**
-
-* **Pedro Henrique de Freitas**
 
 * **Thomaz Flanklin de Souza Jorge**
 
@@ -25,7 +22,7 @@
 **PHP - Versão: 7.4.7**
 
 ### Banco de Dados
-**phpMyAdmin - Versão: 5.0.2**
+**mysql Ver 15.1 Distrib 10.4.11-MariaDB, for Win64**
 
 ### Servidor
 **Apache - Versão: 2.4.43**
@@ -33,7 +30,7 @@
 ## REGRAS E PADRÕES DE USO DO GIT
 ### Commits:
 ```
-* Todos os commits dever ser claros;
+* Todos os commits devem começar com o nome da ação;
 * Todos os commits devem estar no infinitivo.
 ```
 ### Branchs:
