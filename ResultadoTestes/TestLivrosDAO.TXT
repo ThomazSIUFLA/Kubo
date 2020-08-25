@@ -1,0 +1,82 @@
+estudo@Thomaz-SI MINGW64 /c/xampp/htdocs/Bootstrap/tests/Persistence
+$ phpunit testLivrosDAO.php
+PHPUnit 9.3.7 by Sebastian Bergmann and contributors.
+
+.FFFFEFF                                                            8 / 8 (100%)
+
+Time: 00:00.165, Memory: 16.00 MB
+
+There was 1 error:
+
+1) TestLivrosDAO::testAlterarLivro
+Trying to access array offset on value of type int
+
+C:\xampp\htdocs\Bootstrap\bibl\Persistence\LivroDAO.php:69
+C:\xampp\htdocs\Bootstrap\tests\Persistence\testLivrosDAO.php:50
+
+--
+
+There were 6 failures:
+
+1) TestLivrosDAO::testListarLivros
+Failed asserting that mysqli_result Object &00000000052e829e0000000010d3b6be (
+    'current_field' => null
+    'field_count' => null
+    'lengths' => null
+    'num_rows' => null
+    'type' => null
+) is true.
+
+C:\xampp\htdocs\Bootstrap\tests\Persistence\testLivrosDAO.php:21
+
+2) TestLivrosDAO::testDetalharLivro
+Failed asserting that mysqli_result Object &00000000052e829b0000000010d3b6be (
+    'current_field' => null
+    'field_count' => null
+    'lengths' => null
+    'num_rows' => null
+    'type' => null
+) is true.
+
+C:\xampp\htdocs\Bootstrap\tests\Persistence\testLivrosDAO.php:28
+
+3) TestLivrosDAO::testBuscaEditora
+Failed asserting that mysqli_result Object &00000000052e82840000000010d3b6be (
+    'current_field' => null
+    'field_count' => null
+    'lengths' => null
+    'num_rows' => null
+    'type' => null
+) is true.
+
+C:\xampp\htdocs\Bootstrap\tests\Persistence\testLivrosDAO.php:36
+
+4) TestLivrosDAO::testBuscaDisponiveis
+Failed asserting that mysqli_result Object &00000000052e82810000000010d3b6be (
+    'current_field' => null
+    'field_count' => null
+    'lengths' => null
+    'num_rows' => null
+    'type' => null
+) is true.
+
+C:\xampp\htdocs\Bootstrap\tests\Persistence\testLivrosDAO.php:43
+
+5) TestLivrosDAO::testPesquisaLivro
+Failed asserting that mysqli_result Object &00000000052e82890000000010d3b6be (
+    'current_field' => null
+    'field_count' => null
+    'lengths' => null
+    'num_rows' => null
+    'type' => null
+) is true.
+
+C:\xampp\htdocs\Bootstrap\tests\Persistence\testLivrosDAO.php:57
+
+6) TestLivrosDAO::testExcluiLivros
+Failed asserting that false is true.
+
+C:\xampp\htdocs\Bootstrap\tests\Persistence\testLivrosDAO.php:64
+
+ERRORS!
+Tests: 8, Assertions: 7, Errors: 1, Failures: 6.
