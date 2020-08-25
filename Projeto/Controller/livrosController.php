@@ -27,6 +27,7 @@
             $connection = new Connection();
             $conn = $connection->getConnection();   
             $dao = new LivroDao();
+            
             $res = $dao->pesquisaLivro($conn,$valor['param'],$valor['valor']);
             return $res;
         }
@@ -40,4 +41,5 @@
             }
             return "falha ao excluir livro";
         }
+
     }
