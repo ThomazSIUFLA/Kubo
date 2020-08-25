@@ -31,10 +31,6 @@ class Livro{
         return $this->titulo;
     }
 
-    function getCodLivro(){
-        return $this->codLivro;
-    }
-
     function getCodEditora(){
         return $this->codEditora;
     }

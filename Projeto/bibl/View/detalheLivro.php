@@ -23,7 +23,7 @@ $valor = $param[$chave];
   $reg = $liv->fetch_assoc();
   ?>
   <div class="card container center col-md-4" style="background: #007bff linear-gradient(180deg, #268fff, #007bff) repeat-x">
-    <img src="../img/banner1.jpg" class="card-img-top" alt="...">
+    <img src="../img/thristan.jpg" class="card-img-top w-50" alt="...">
     <div class="card-body">
       <h5 class="card-title"><?php echo $reg['titulo'] ?></h5>
       <p class="card-text">código ISBN <?php echo $reg['isbn'] ?></p>

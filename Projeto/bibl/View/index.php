@@ -28,19 +28,19 @@ include './header.php';
     </div>
     <div class="card-deck container m-auto w-75">
         <div class="card bg-dark btn-dark w-25 m-2">
-            <a href="editoras.php" class="btn btn-dark my-2"><img src="../img/download.png" class="img-fluid" alt="va para editoras">
+            <a href="editoras.php" class="btn btn-dark my-2"><img src="../img/editora.jpg" class="img-fluid" alt="va para editoras">
                 <h2>vá para editoras</h2>
             </a>
         </div>
 
         <div class="card bg-dark btn-dark w-25 m-2">
-            <a href="livros.php" class="btn btn-dark my-2"><img src="../img/wiki.jpg" class="img-fluid" alt="va para Livros">
-                <h2>vá para Livros</h2>
+            <a href="livros.php" class="btn btn-dark my-2"><img src="../img/estat.jpg" class="img-fluid" alt="va para estatísticas">
+                <h2>vá para Estatísticas</h2>
             </a>
         </div>
         <div class="card bg-dark btn-dark w-25 m-2">
-            <a href="livros.php" class="btn btn-dark my-2"><img src="../img/wiki.jpg" class="img-fluid" alt="va para Livros">
-                <h2>vá para Alunos</h2>
+            <a href="livros.php" class="btn btn-dark my-2"><img src="../img/chat.jpg" class="img-fluid" alt="va para Chat">
+                <h2>vá para o Chat</h2>
             </a>
         </div>
     </div>

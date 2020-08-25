@@ -26,15 +26,14 @@ class LivroDao {
         WHERE codLivro = {$codLivro['codLivro']}");
 
         $ultimoExemplar = $res->fetch_assoc();
-
-        echo $ultimoExemplar['MAX(idExemplar)'];
         
         for($i = 0; $i < $quant; $i++){
             $id = $i + (int)$ultimoExemplar + 1;
             $sql = "INSERT INTO exemplar VALUES($id, {$codLivro['codLivro']},'s')";
-            echo $sql."<br>";
             $conn->query($sql);
         }
+
+        return true;
 
     }
 

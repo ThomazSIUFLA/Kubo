@@ -22,21 +22,11 @@ SET time_zone = "+00:00";
 -- Banco de dados: `bibliotech`
 --
 
-DELIMITER $$
---
--- Procedimentos
---
-CREATE DEFINER=`root`@`localhost` PROCEDURE `InsereAluno` (IN `anome` VARCHAR(50), IN `atipo` CHAR(3), IN `atelefone` VARCHAR(11), IN `aendereco` VARCHAR(250), IN `aemail` VARCHAR(30), IN `asenha` VARCHAR(20), IN `aturma` CHAR(3), IN `anomeResponsavel` VARCHAR(50), IN `atelResponsavel` VARCHAR(11), IN `amatricula` VARCHAR(8), IN `anasc` DATE, IN `acadastro` DATE)  BEGIN
- DECLARE cod INT(4);
- INSERT INTO usuario(tipo, nome, telefone, endereco, email, senha, nascimento, dataCadastro) 
- VALUES (atipo, anome, atelefone, aendereco, aemail, asenha, anasc, acadastro);
- SELECT idUsuario FROM usuario WHERE email=aemail INTO cod;
- INSERT INTO aluno(idUsuario, turma, nomeResp, telResp, numMatricula) VALUES (cod, aturma, anomeResponsavel, atelResponsavel, amatricula);
-END$$
+CREATE SCHEMA IF NOT EXISTS bibliotech;
 
-DELIMITER ;
+USE bibliotech;
 
--- --------------------------------------------------------
+
 
 --
 -- Estrutura da tabela `admin`
@@ -417,6 +407,23 @@ ALTER TABLE `emprestimo`
 ALTER TABLE `livrosemprestimo`
   ADD CONSTRAINT `fk_emprestimoLivro` FOREIGN KEY (`idEmprestimo`) REFERENCES `emprestimo` (`idEmprestimo`),
   ADD CONSTRAINT `fk_liv_empo` FOREIGN KEY (`codLivro`) REFERENCES `livros` (`codLivro`);
+  
+DELIMITER $$
+--
+-- Procedimentos
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `InsereAluno` (IN `anome` VARCHAR(50), IN `atipo` CHAR(3), IN `atelefone` VARCHAR(11), IN `aendereco` VARCHAR(250), IN `aemail` VARCHAR(30), IN `asenha` VARCHAR(20), IN `aturma` CHAR(3), IN `anomeResponsavel` VARCHAR(50), IN `atelResponsavel` VARCHAR(11), IN `amatricula` VARCHAR(8), IN `anasc` DATE, IN `acadastro` DATE)  BEGIN
+ DECLARE cod INT(4);
+ INSERT INTO usuario(tipo, nome, telefone, endereco, email, senha, nascimento, dataCadastro) 
+ VALUES (atipo, anome, atelefone, aendereco, aemail, asenha, anasc, acadastro);
+ SELECT idUsuario FROM usuario WHERE email=aemail INTO cod;
+ INSERT INTO aluno(idUsuario, turma, nomeResp, telResp, numMatricula) VALUES (cod, aturma, anomeResponsavel, atelResponsavel, amatricula);
+END$$
+
+DELIMITER ;
+
+-- --------------------------------------------------------  
+  
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
